@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.navbar {
+  color: white;
+}
+
+.carousel {
+  height: 360px;
+  margin: 0px 0px 0px 40px;
+}
+
+.carousel-inner img {
+  height: 360px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.call-btn {
+  padding-left: 45px !important;
+  padding-right: 45px !important;
+  border-radius: 20px !important;
+  margin-left: 30px;
+}
+
+.materials h5 {
+  font-size: large;
+}
+
+.material-1 {
+  margin-left: 30px;
+}
+
+.material-2 {
+  margin-left: 30px;
+  padding-left: 20px;
+  border-left: 2px solid rgb(184, 179, 179);
+}
+
+.gradient-bg {
+  margin: 50px 50px 50px 50px;
+  padding: 20px 0px 20px 0px;
+  background: linear-gradient(to right, #004d00, #00b300, #004d00);
+  /* Dark green to light green to dark green */
+  color: white;
+}
+
+.follow-div {
+  border-radius: 10px;
+  margin-left: 35px;
+}
+
+.hero-wlcm {
+  margin-left: 2rem !important;
+}
+
+.spec-card {
+  background-color: #B1E9CD;
+}
+
+.spec-2 {
+  border-left: 2px solid gray;
+  padding-left: 15px;
+}
+
+.spec-3 {
+  border-left: 2px solid gray;
+  padding-left: 15px;
+}
+
+.tractor-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.latest-h4 {
+  text-underline-offset: 2px solid;
+}
+
+.latest-h4 {
+  display: inline-block;
+  position: relative;
+  /* Positioning for the underline */
+  padding-bottom: 7px;
+  /* Space between the text and the underline */
+}
+
+.latest-h4::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(6, 90, 6);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+@media (max-width: 950px) {
+  .follow-div {
+    flex-direction: column;
+  }
+
+  .follow-div h4 {
+    font-size: 15px;
+  }
+
+  .materials {
+    flex-direction: column !important;
+  }
+
+  .material-1 {
+    margin-left: none;
+  }
+
+  .material-2 {
+    border-left: none;
+    padding-left: 0px;
+  }
+
+  .carousel {
+    height: 250px;
+    margin-left: 30px;
+  }
+
+  .carousel-inner img {
+    height: 250px;
+  }
+
+  .wlcm h3 {
+    font-size: 10px;
+  }
+}
+
+
+/* Style for the Arrows */
+.slick-prev,
+.slick-next {
+  background-color: green !important;
+  border-radius: 50%;
+  color: white;
+  padding: 10px;
+  z-index: 10;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Position the arrows on both sides */
+.slick-prev {
+  margin-left: 50px;
+  /* Adjust positioning of the left arrow */
+}
+
+.slick-next {
+  margin-right: 63px;
+  /* Adjust positioning of the right arrow */
+}
